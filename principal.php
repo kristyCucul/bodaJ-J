@@ -259,6 +259,13 @@
           <i class="bi bi-house-door-fill me-2"></i>Inicio
         </a>
       </li>
+
+        <li class="nav-item mb-3">
+        <a class="nav-link d-flex align-items-center fs-5" href="confirmacion.php">
+          <i class="bi bi-clipboard-check-fill me-2"></i> Confirmar asistencia
+        </a>
+      </li>
+      
       <li class="nav-item mb-3">
         <a class="nav-link d-flex align-items-center" href="Ubicación.php">
           <i class="bi bi-geo-alt-fill me-2"></i>Ubicación
@@ -284,11 +291,7 @@
           <i class="bi bi-people-fill me-2"></i>Nuestra Información
         </a>
       </li>
-      <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center" href="wishlist.php">
-          <i class="bi bi-gift-fill me-2"></i>Si deseas Bendecirnos
-        </a>
-      </li>
+
       <li class="nav-item mb-3">
         <a class="nav-link d-flex align-items-center" href="historia.php">
           <i class="bi bi-stars me-2"></i>Nuestra Historia
@@ -308,4 +311,5 @@
   <footer><?php include_once("fooder.php") ?></footer>
 </body>
 </html>
+
 
