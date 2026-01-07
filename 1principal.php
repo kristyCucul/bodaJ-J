@@ -263,7 +263,7 @@
         </a>
       </li>
       <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center" href="1ubicación.php">
+        <a class="nav-link d-flex align-items-center" href="1Ubicación.php">
           <i class="bi bi-geo-alt-fill me-2"></i>Location
         </a>
       </li>
@@ -303,3 +303,4 @@
   <footer><?php include_once("1fooder.php") ?></footer>
 </body>
 </html>
+
