@@ -174,7 +174,7 @@
       </li>
 
       <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center" href="ubicación.php">
+        <a class="nav-link d-flex align-items-center" href="ubicacion.php">
           <i class="bi bi-geo-alt-fill me-2"></i>Ubicación
         </a>
       </li>
@@ -242,5 +242,6 @@
 
 </body>
 </html>
+
 
 
