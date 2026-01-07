@@ -166,6 +166,12 @@
           <i class="bi bi-house-door-fill me-2"></i>Inicio
         </a>
       </li>
+      
+      <li class="nav-item mb-3">
+        <a class="nav-link d-flex align-items-center fs-5" href="confirmacion.php">
+          <i class="bi bi-clipboard-check-fill me-2"></i> Confirmar asistencia
+        </a>
+      </li>
 
       <li class="nav-item mb-3">
         <a class="nav-link d-flex align-items-center" href="ubicación.php">
@@ -236,4 +242,5 @@
 
 </body>
 </html>
+
 
