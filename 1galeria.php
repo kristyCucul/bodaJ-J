@@ -188,18 +188,19 @@
 
 </div>
 
-<section>
-  <h2>Engagement Video</h2>
-  <div class="video">
+<section class="container my-5">
+  <h2 class="text-center mb-4">Engagement Video</h2>
+
+  <div class="ratio ratio-16x9">
     <iframe 
       src="https://www.youtube.com/embed/sD_r3CTPQ9E"
       title="Engagement Video"
-      frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
     </iframe>
   </div>
 </section>
+
 
 
 <p class="texto">
@@ -221,4 +222,5 @@
 </footer>
 </body>
 </html>
+
 
