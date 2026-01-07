@@ -88,11 +88,6 @@
         </a>
       </li>
 
-      <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center fs-5" href="wishlist.php">
-          <i class="bi bi-gift-fill me-2"></i> Si deseas bendecirnos
-        </a>
-      </li>
 
       <li class="nav-item mb-3">
         <a class="nav-link d-flex align-items-center fs-5" href="historia.php">
@@ -106,3 +101,4 @@
 </div>
 
 <?php include_once("fooder.php"); ?>
+
