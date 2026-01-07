@@ -89,12 +89,6 @@
       </li>
 
       <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center fs-5" href="wishlist.php">
-          <i class="bi bi-gift-fill me-2"></i> If You Wish to Bless Us
-        </a>
-      </li>
-
-      <li class="nav-item mb-3">
         <a class="nav-link d-flex align-items-center fs-5" href="historia.php">
           <i class="bi bi-stars me-2"></i> Our Story
         </a>
@@ -106,3 +100,4 @@
 </div>
 
 <?php include_once("fooder.php"); ?>
+
