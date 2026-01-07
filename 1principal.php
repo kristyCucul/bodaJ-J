@@ -261,6 +261,11 @@
         <a class="nav-link d-flex align-items-center" href="1principal.php">
           <i class="bi bi-house-door-fill me-2"></i>Home
         </a>
+       <li class="nav-item mb-3">
+        <a class="nav-link d-flex align-items-center fs-5" href="1confirmacion.php">
+          <i class="bi bi-clipboard-check-fill me-2"></i> RSVP Confirmation
+        </a>
+      </li>
       </li>
       <li class="nav-item mb-3">
         <a class="nav-link d-flex align-items-center" href="1Ubicación.php">
@@ -303,4 +308,5 @@
   <footer><?php include_once("1fooder.php") ?></footer>
 </body>
 </html>
+
 
