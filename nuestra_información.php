@@ -128,7 +128,7 @@
         <ul>
           <li>⛪ Iglesia: Lubbock Texas </li>
           <li>🏦 Cuenta Monetaria: </li>
-          <img src="multimedia/cuentajhon.jpeg" alt="Descripción de la imagen" width="100">
+          <img src="multimedia/cuentajhon.jpeg" alt="Descripción de la imagen" width="300">
           <li>
             ✉️ Correo: 
             <a href="mailto:j.art5664@gmail.com">
@@ -165,4 +165,5 @@
 
 </body>
 </html>
+
 
