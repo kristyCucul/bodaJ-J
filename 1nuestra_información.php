@@ -128,7 +128,7 @@
         <ul>
           <li>⛪ Church: The Door, Lubbock Texas</li>
           <li>🏦: </li>
-          <img src="multimedia/cuentajhon.jpeg" alt="Descripción de la imagen" width="100">
+          <img src="multimedia/cuentajhon.jpeg" alt="Descripción de la imagen" width="300">
           <li>
             ✉️ Email:
             <a href="mailto:j.art5664@gmail.com">
@@ -164,4 +164,5 @@
 
 </body>
 </html>
+
 
