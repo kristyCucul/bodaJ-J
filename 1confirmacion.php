@@ -11,11 +11,11 @@
 
   <!-- FORM -->
   <div class="ratio ratio-1x1" style="min-height: 1200px;">
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSdp8IoJQ6vYSQaXBteFrwaNb0_Ee1_8UzboymWCQe5uvIU-Dw/viewform?embedded=true"
-      style="border:0;"
-      loading="lazy">
-    </iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfx55kzMIlvJiipOMO8FUbDz5jnfSI6auO5OnhAKsQiQF_ndQ/viewform?embedded=true"
+  width="640" height="783" 
+  frameborder="0" marginheight="0" 
+  marginwidth="0">Cargando…
+</iframe>
   </div>
 
 </div>
@@ -100,4 +100,5 @@
 </div>
 
 <?php include_once("fooder.php"); ?>
+
 
