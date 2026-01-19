@@ -148,7 +148,7 @@
 <main style="margin-top: 30px;">
   <div class="contenedor-principal">
     <div class="contenedor-izquierda">
-      <img src="multimedia/3.jpg" alt="Calendar">
+      <img src="multimedia/calendar.png" alt="Calendar">
     </div>
 
     <div class="bloque-contador">
@@ -228,3 +228,4 @@
   <?php include_once("1fooder.php") ?>
 </footer>
 </html>
+
