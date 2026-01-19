@@ -85,12 +85,26 @@
 
 <body>
 
-  <div class="indicaciones">
-    <h2>Guidelines for the Big Day</h2>
-    <ul>
-      <li>Please arrive on time so you don’t miss any special moments.</li>
-      <li>Maintain reverence at all times; remember that you are in the house of God.</li>
+  ```html
+<div class="indicaciones">
+  <h2>Guidelines for the Big Day</h2>
+  <ul>
+    <li>Please arrive on time so you do not miss any special moments.</li>
+    <li>Maintain reverence at all times; remember that you are in the house of God.</li>
+    <li>Dress with elegance and modesty, remembering that this is a sacred celebration.</li>
+    <li>Avoid wearing colors similar to the bride’s dress (white, beige).</li>
+    <li>Do not forget to confirm your attendance.</li>
+    <li>If you bring children, please keep an eye on their care.</li>
+    <li>Respect the timing and designated areas of the event.</li>
+    <li>Turn off or silence your mobile phone during the ceremony.</li>
+    <li>You may take photos, but please do not interrupt the official photographers.</li>
+    <li>Please share the photos you take in the folder we have prepared for you 📷</li>
+    <li>Above all… enjoy, celebrate, and share this very special day with us!</li>
+  </ul>
+</div>
+```
 
 <footer>
   <?php include_once("1fooder.php") ?>
 </footer>
+
