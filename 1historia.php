@@ -132,9 +132,21 @@
     </div>
 
     <!-- JACKY'S STORY -->
-    <div class="historia">
-      <h3>Jacky</h3>
+<div class="historia">
+  <h3>Jacky</h3>
+  <p>
+    I always asked God for someone with whom to share the later years of my life, someone who would value me
+    and give me the place I deserve. I never imagined that this person would be from another country; it was
+    something unexpected, something that arose without us having met in person from the beginning.
+    <br><br>
+    But as John told me, it was God who said, “she is the one.” And in the same way,
+    God confirmed to me as well: “he is the right one too.”
+  </p>
+</div>
+
+
 
 <footer>
   <?php include_once("1fooder.php") ?>
+
 </footer>
