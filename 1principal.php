@@ -192,7 +192,7 @@
     <!-- Countdown -->
     <div class="contenedor-principal">
       <div class="contenedor-izquierda">
-        <img src="multimedia/3.jpg" alt="Calendar" />
+        <img src="multimedia/calendar.png" alt="Calendar" />
       </div>
 
       <div class="bloque-contador">
@@ -308,6 +308,7 @@
   <footer><?php include_once("1fooder.php") ?></footer>
 </body>
 </html>
+
 
 
 
