@@ -1,4 +1,4 @@
-<?php include_once("header.php"); ?>
+<?php include_once("1header.php"); ?>
 
 <!-- MAIN CONTENT -->
 <div class="container my-5">
@@ -47,49 +47,49 @@
     <ul class="navbar-nav">
 
       <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center fs-5" href="principal.php">
+        <a class="nav-link d-flex align-items-center fs-5" href="1principal.php">
           <i class="bi bi-house-door-fill me-2"></i> Home
         </a>
       </li>
 
       <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center fs-5" href="confirmacion.php">
+        <a class="nav-link d-flex align-items-center fs-5" href="1confirmacion.php">
           <i class="bi bi-clipboard-check-fill me-2"></i> RSVP Confirmation
         </a>
       </li>
 
       <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center fs-5" href="ubicacion.php">
+        <a class="nav-link d-flex align-items-center fs-5" href="1ubicacion.php">
           <i class="bi bi-geo-alt-fill me-2"></i> Location
         </a>
       </li>
 
       <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center fs-5" href="itinerario.php">
+        <a class="nav-link d-flex align-items-center fs-5" href="1itinerario.php">
           <i class="bi bi-calendar-heart-fill me-2"></i> Itinerary
         </a>
       </li>
 
       <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center fs-5" href="galeria.php">
+        <a class="nav-link d-flex align-items-center fs-5" href="1galeria.php">
           <i class="bi bi-images me-2"></i> Gallery
         </a>
       </li>
 
       <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center fs-5" href="indicaciones.php">
+        <a class="nav-link d-flex align-items-center fs-5" href="1indicaciones.php">
           <i class="bi bi-map-fill me-2"></i> Directions
         </a>
       </li>
 
       <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center fs-5" href="nuestra_informacion.php">
+        <a class="nav-link d-flex align-items-center fs-5" href="1nuestra_informacion.php">
           <i class="bi bi-people-fill me-2"></i> Our Information
         </a>
       </li>
 
       <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center fs-5" href="historia.php">
+        <a class="nav-link d-flex align-items-center fs-5" href="1historia.php">
           <i class="bi bi-stars me-2"></i> Our Story
         </a>
       </li>
@@ -100,5 +100,6 @@
 </div>
 
 <?php include_once("fooder.php"); ?>
+
 
 
