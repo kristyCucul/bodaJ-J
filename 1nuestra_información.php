@@ -126,13 +126,13 @@
       <div class="novio">
         <h3 class="titulo">💙 John Escamilla</h3>
         <ul>
-          <li>📞 Phone: </li>
-          <li>⛪ Church: </li>
-          <li>🏦 Bank Account: </li>
+          <li>⛪ Church: The Door, Lubbock Texas</li>
+          <li>🏦: </li>
+          <img src="multimedia/cuentajhon.jpeg" alt="Descripción de la imagen" width="100">
           <li>
             ✉️ Email:
-            <a href="">
-              
+            <a href="mailto:j.art5664@gmail.com">
+              j.art5664@gmail.com
             </a>
           </li>
         </ul>
@@ -164,3 +164,4 @@
 
 </body>
 </html>
+
