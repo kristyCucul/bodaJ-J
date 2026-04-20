@@ -192,7 +192,143 @@
     <!-- Countdown -->
     <div class="contenedor-principal">
       <div class="contenedor-izquierda">
-        <img src="multimedia/calendar.png" alt="Calendar" />
+       <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Junio 2026 - Nuestra Boda</title>
+
+<style>
+    body {
+        font-family: 'Georgia', serif;
+        background-color: #7d8c6b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .calendar {
+        background: #8fa27a;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        width: 400px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+        color: #f5f5f5;
+        font-size: 32px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
+    .days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        color: #f0f0f0;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .dates {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+    }
+
+    .date {
+        padding: 10px;
+        font-size: 18px;
+        color: #000;
+    }
+
+    .empty {
+        visibility: hidden;
+    }
+
+    /* Día especial (boda) */
+    .wedding {
+        border: 2px solid #c8a96a;
+        border-radius: 50%;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .wedding::after {
+        content: "❤";
+        position: absolute;
+        bottom: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        color: white;
+    }
+
+    .footer {
+        margin-top: 20px;
+        color: white;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+</style>
+
+<div class="calendar">
+    <h1>Junio 2026</h1>
+
+    <div class="days">
+        <div>Lunes</div>
+        <div>Martes</div>
+        <div>Miércoles</div>
+        <div>Jueves</div>
+        <div>Viernes</div>
+        <div>Sábado</div>
+        <div>Domingo</div>
+    </div>
+
+    <div class="dates">
+        <!-- Espacios vacíos (junio 2026 empieza en lunes, así que no hay vacíos) -->
+
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+
+        <!-- Día especial -->
+        <div class="date wedding">28</div>
+
+        <div class="date">29</div>
+        <div class="date">30</div>
+    </div>
+
       </div>
 
       <div class="bloque-contador">
