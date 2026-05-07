@@ -268,7 +268,7 @@
   <!-- BOTÓN -->
   <div class="btn-bajo-imagen">
     <button class="boton-elegante"
-      onclick="window.location.href='1historia.php'">
+      onclick="window.location.href='historia.php'">
       Descubre Nuestra Historia
     </button>
   </div>
@@ -415,14 +415,14 @@
 
         <li class="nav-item mb-3">
           <a class="nav-link d-flex align-items-center"
-             href="1principal.php">
+             href="principal.php">
             <i class="bi bi-house-door-fill me-2"></i>Inicio
           </a>
         </li>
 
         <li class="nav-item mb-3">
           <a class="nav-link d-flex align-items-center"
-             href="1confirmacion.php">
+             href="confirmacion.php">
             <i class="bi bi-clipboard-check-fill me-2"></i>
             Confirmación RSVP
           </a>
@@ -430,42 +430,42 @@
 
         <li class="nav-item mb-3">
           <a class="nav-link d-flex align-items-center"
-             href="1ubicacion.php">
+             href="ubicacion.php">
             <i class="bi bi-geo-alt-fill me-2"></i>Ubicación
           </a>
         </li>
 
         <li class="nav-item mb-3">
           <a class="nav-link d-flex align-items-center"
-             href="1itinerario.php">
+             href="itinerario.php">
             <i class="bi bi-calendar-heart-fill me-2"></i>Itinerario
           </a>
         </li>
 
         <li class="nav-item mb-3">
           <a class="nav-link d-flex align-items-center"
-             href="1galeria.php">
+             href="galeria.php">
             <i class="bi bi-images me-2"></i>Galería
           </a>
         </li>
 
         <li class="nav-item mb-3">
           <a class="nav-link d-flex align-items-center"
-             href="1indicaciones.php">
+             href="indicaciones.php">
             <i class="bi bi-map-fill me-2"></i>Indicaciones
           </a>
         </li>
 
         <li class="nav-item mb-3">
           <a class="nav-link d-flex align-items-center"
-             href="1nuestra_información.php">
+             href="nuestra_información.php">
             <i class="bi bi-people-fill me-2"></i>Nuestra Información
           </a>
         </li>
 
         <li class="nav-item mb-3">
           <a class="nav-link d-flex align-items-center"
-             href="1historia.php">
+             href="historia.php">
             <i class="bi bi-stars me-2"></i>Nuestra Historia
           </a>
         </li>
@@ -479,7 +479,7 @@
 
 <!-- FOOTER -->
 <footer class="mt-5">
-  <?php include_once("1fooder.php") ?>
+  <?php include_once("fooder.php") ?>
 </footer>
 
 <!-- SCRIPTS -->
