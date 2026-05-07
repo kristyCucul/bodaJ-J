@@ -17,8 +17,14 @@
       margin: 0;
       padding: 0;
       font-family: 'Cormorant Garamond', serif;
+      overflow-x: hidden;
     }
 
+    main {
+      margin-top: 70px;
+    }
+
+    /* IMAGE */
     .img-contenedor {
       text-align: center;
       width: 100%;
@@ -31,6 +37,7 @@
       display: block;
     }
 
+    /* BUTTON */
     .btn-bajo-imagen {
       display: flex;
       justify-content: center;
@@ -46,9 +53,10 @@
       font-size: 20px;
       font-family: 'Cormorant Garamond', serif;
       cursor: pointer;
-      box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3),
-                  0 6px 0 #827956,
-                  0 10px 20px rgba(0, 0, 0, 0.2);
+      box-shadow:
+        inset 0 -3px 0 rgba(0, 0, 0, 0.3),
+        0 6px 0 #827956,
+        0 10px 20px rgba(0, 0, 0, 0.2);
       transition: all 0.3s ease;
     }
 
@@ -60,38 +68,92 @@
 
     .boton-elegante:active {
       transform: translateY(2px);
-      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3),
-                  0 4px 0 #5a5335,
-                  0 6px 10px rgba(0, 0, 0, 0.2);
+      box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.3),
+        0 4px 0 #5a5335,
+        0 6px 10px rgba(0, 0, 0, 0.2);
     }
 
+    /* MAIN CONTAINER */
     .contenedor-principal {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 50px;
-      padding: 40px 20px;
+      gap: 60px;
+      padding: 60px 20px;
       flex-wrap: wrap;
     }
 
-    .contenedor-izquierda img {
-      max-width: 500px;
-      width: 80%;
-      height: auto;
-      border-radius: 12px;
-      display: block;
-      margin: 0 auto;
+    /* CALENDAR */
+    .calendar {
+      background: #8fa27a;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      width: 400px;
+      max-width: 100%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
 
+    .calendar h1 {
+      color: #f5f5f5;
+      font-size: 32px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      color: #f0f0f0;
+      font-size: 14px;
+      margin-bottom: 10px;
+      gap: 5px;
+    }
+
+    .dates {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+
+    .date {
+      padding: 10px;
+      font-size: 18px;
+      color: #000;
+      background: rgba(255,255,255,0.7);
+      border-radius: 10px;
+    }
+
+    .wedding {
+      border: 2px solid #c8a96a;
+      border-radius: 50%;
+      font-weight: bold;
+      position: relative;
+      background: white;
+    }
+
+    .wedding::after {
+      content: "❤";
+      position: absolute;
+      bottom: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: white;
+    }
+
+    /* COUNTDOWN */
     .bloque-contador {
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: #fff;
+      color: white;
       text-align: center;
     }
 
-    .contador-titulo, .contador-titulo2 {
+    .contador-titulo,
+    .contador-titulo2 {
       font-size: 42px;
       margin: 10px 0;
       color: #d8b37c;
@@ -100,196 +162,136 @@
     .contador {
       display: flex;
       justify-content: center;
-      gap: 10px;
+      gap: 15px;
       flex-wrap: wrap;
+      margin-top: 15px;
     }
 
     .contador div {
-      background: #fff;
-      color: #000;
+      background: white;
+      color: black;
       padding: 20px;
       border-radius: 12px;
+      min-width: 90px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      min-width: 50px;
-      font-size: 25px;
+      font-size: 28px;
       font-weight: bold;
     }
 
     .contador span {
       display: block;
-      font-size: 10px;
+      font-size: 12px;
       margin-top: 8px;
       font-weight: normal;
     }
 
-    @media (max-width: 768px) {
-      .boton-elegante {
-        padding: 16px 28px;
-        font-size: 16px;
-      }
-
-      .contador-titulo, .contador-titulo2 {
-        font-size: 32px;
-      }
-
-      .contador div {
-        padding: 15px;
-        font-size: 24px;
-      }
-
-      .contenedor-principal {
-        gap: 30px;
-        padding: 20px 10px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .boton-elegante {
-        padding: 12px 22px;
-        font-size: 14px;
-      }
-
-      .contador-titulo, .contador-titulo2 {
-        font-size: 26px;
-      }
-
-      .contador div {
-        font-size: 20px;
-        padding: 12px;
-      }
-    }
-
+    /* MENU */
     .offcanvas {
       background-color: #4c1424;
     }
 
     .nav-link {
-      color: #6c5c3f;
+      color: #d8b37c;
       font-weight: 500;
+      transition: 0.3s;
     }
 
     .nav-link:hover {
-      color: #d8b37c;
+      color: white;
+      transform: translateX(5px);
+    }
+
+    /* FOOTER */
+    footer {
+      width: 100%;
+      display: block;
+      margin-top: 80px;
+      clear: both;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .contenedor-principal {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 15px;
+      }
+
+      .contador-titulo,
+      .contador-titulo2 {
+        font-size: 32px;
+      }
+
+      .contador div {
+        min-width: 75px;
+        padding: 15px;
+        font-size: 22px;
+      }
+
+      .boton-elegante {
+        padding: 15px 28px;
+        font-size: 16px;
+      }
+
+      .calendar {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contador {
+        gap: 10px;
+      }
+
+      .contador div {
+        min-width: 65px;
+        font-size: 18px;
+      }
+
+      .contador-titulo,
+      .contador-titulo2 {
+        font-size: 26px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <main style="margin-top: 70px;">
 
-    <!-- Image -->
-    <div class="img-contenedor"> 
-      <img src="multimedia/imagen principal (3).png" alt="Main wedding image" />
-    </div>
+<main>
 
-    <!-- Button below image -->
-    <div class="btn-bajo-imagen">
-      <button class="boton-elegante" onclick="window.location.href='1historia.php'">
-        Discover Our Story
-      </button>
-    </div>
+  <!-- IMAGE -->
+  <div class="img-contenedor">
+    <img src="multimedia/imagen principal (3).png" alt="Wedding image">
+  </div>
 
-    <!-- Countdown -->
-    <div class="contenedor-principal">
-      <div class="contenedor-izquierda">
-       <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Junio 2026 - Nuestra Boda</title>
+  <!-- BUTTON -->
+  <div class="btn-bajo-imagen">
+    <button class="boton-elegante"
+      onclick="window.location.href='1historia.php'">
+      Discover Our Story
+    </button>
+  </div>
 
-<style>
-    body {
-        font-family: 'Georgia', serif;
-        background-color: #7d8c6b;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
+  <!-- CALENDAR + COUNTDOWN -->
+  <div class="contenedor-principal">
 
-    .calendar {
-        background: #8fa27a;
-        padding: 30px;
-        border-radius: 10px;
-        text-align: center;
-        width: 400px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    }
+    <!-- CALENDAR -->
+    <div class="calendar">
 
-    h1 {
-        color: #f5f5f5;
-        font-size: 32px;
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-    }
+      <h1>June 2026</h1>
 
-    .days {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        color: #f0f0f0;
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
+      <div class="days">
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+        <div>Sun</div>
+      </div>
 
-    .dates {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        gap: 10px;
-    }
-
-    .date {
-        padding: 10px;
-        font-size: 18px;
-        color: #000;
-    }
-
-    .empty {
-        visibility: hidden;
-    }
-
-    /* Día especial (boda) */
-    .wedding {
-        border: 2px solid #c8a96a;
-        border-radius: 50%;
-        font-weight: bold;
-        position: relative;
-    }
-
-    .wedding::after {
-        content: "❤";
-        position: absolute;
-        bottom: -18px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 14px;
-        color: white;
-    }
-
-    .footer {
-        margin-top: 20px;
-        color: white;
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-</style>
-
-<div class="calendar">
-    <h1>Junio 2026</h1>
-
-    <div class="days">
-        <div>Lunes</div>
-        <div>Martes</div>
-        <div>Miércoles</div>
-        <div>Jueves</div>
-        <div>Viernes</div>
-        <div>Sábado</div>
-        <div>Domingo</div>
-    </div>
-
-    <div class="dates">
-        <!-- Espacios vacíos (junio 2026 empieza en lunes, así que no hay vacíos) -->
+      <div class="dates">
 
         <div class="date">1</div>
         <div class="date">2</div>
@@ -322,129 +324,214 @@
         <div class="date">26</div>
         <div class="date">27</div>
 
-        <!-- Día especial -->
         <div class="date wedding">28</div>
 
         <div class="date">29</div>
         <div class="date">30</div>
-    </div>
 
       </div>
+    </div>
 
-      <div class="bloque-contador">
-        <h2 class="contador-titulo">Only...</h2>
-        <div class="contador" id="contador">
-          <div><div id="dias">0</div><span>Days</span></div>
-          <div><div id="horas">0</div><span>Hours</span></div>
-          <div><div id="minutos">0</div><span>Minutes</span></div>
-          <div><div id="segundos">0</div><span>Seconds</span></div>
+    <!-- COUNTDOWN -->
+    <div class="bloque-contador">
+
+      <h2 class="contador-titulo">Only...</h2>
+
+      <div class="contador" id="contador">
+
+        <div>
+          <div id="dias">0</div>
+          <span>Days</span>
         </div>
-        <h2 class="contador-titulo2">Until our wedding</h2>
+
+        <div>
+          <div id="horas">0</div>
+          <span>Hours</span>
+        </div>
+
+        <div>
+          <div id="minutos">0</div>
+          <span>Minutes</span>
+        </div>
+
+        <div>
+          <div id="segundos">0</div>
+          <span>Seconds</span>
+        </div>
+
       </div>
+
+      <h2 class="contador-titulo2">
+        Until our wedding
+      </h2>
+
     </div>
 
-    <!-- Countdown script -->
-    <script>
-      function actualizarContador() {
-        const fechaBoda = new Date('2026-06-28T11:00:00');
-        const ahora = new Date();
-        const diferencia = fechaBoda - ahora;
+  </div>
 
-        if (diferencia > 0) {
-          const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-          const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-          const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+  <!-- MENU BUTTON -->
+  <div class="container text-center mt-5">
+    <button
+      class="btn rounded-pill px-4 py-2"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+      style="background-color: #f5f5dc; color: #000;">
 
-          document.getElementById('dias').innerText = dias;
-          document.getElementById('horas').innerText = horas;
-          document.getElementById('minutos').innerText = minutos;
-          document.getElementById('segundos').innerText = segundos;
-        } else {
-          document.getElementById('contador').innerHTML = "<p>The big day has arrived! 💍✨</p>";
-        }
-      }
+      ☰ Menu
 
-      actualizarContador();
-      setInterval(actualizarContador, 1000);
-    </script>
+    </button>
+  </div>
 
+  <!-- OFFCANVAS -->
+  <div class="offcanvas offcanvas-end"
+       tabindex="-1"
+       id="offcanvasRight"
+       aria-labelledby="offcanvasRightLabel">
+
+    <div class="offcanvas-header border-bottom"
+         style="border-color: #d8b37c;">
+
+      <h5 class="offcanvas-title fw-bold text-uppercase"
+          id="offcanvasRightLabel">
+
+        <i class="bi bi-info-circle-fill me-2"></i>
+        More Information
+
+      </h5>
+
+      <button type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close">
+      </button>
+
+    </div>
+
+    <div class="offcanvas-body px-4">
+
+      <ul class="navbar-nav">
+
+        <li class="nav-item mb-3">
+          <a class="nav-link d-flex align-items-center"
+             href="1principal.php">
+            <i class="bi bi-house-door-fill me-2"></i>Home
+          </a>
+        </li>
+
+        <li class="nav-item mb-3">
+          <a class="nav-link d-flex align-items-center"
+             href="1confirmacion.php">
+            <i class="bi bi-clipboard-check-fill me-2"></i>
+            RSVP Confirmation
+          </a>
+        </li>
+
+        <li class="nav-item mb-3">
+          <a class="nav-link d-flex align-items-center"
+             href="1ubicacion.php">
+            <i class="bi bi-geo-alt-fill me-2"></i>Location
+          </a>
+        </li>
+
+        <li class="nav-item mb-3">
+          <a class="nav-link d-flex align-items-center"
+             href="1itinerario.php">
+            <i class="bi bi-calendar-heart-fill me-2"></i>Schedule
+          </a>
+        </li>
+
+        <li class="nav-item mb-3">
+          <a class="nav-link d-flex align-items-center"
+             href="1galeria.php">
+            <i class="bi bi-images me-2"></i>Gallery
+          </a>
+        </li>
+
+        <li class="nav-item mb-3">
+          <a class="nav-link d-flex align-items-center"
+             href="1indicaciones.php">
+            <i class="bi bi-map-fill me-2"></i>Guidelines
+          </a>
+        </li>
+
+        <li class="nav-item mb-3">
+          <a class="nav-link d-flex align-items-center"
+             href="1nuestra_información.php">
+            <i class="bi bi-people-fill me-2"></i>Our Information
+          </a>
+        </li>
+
+        <li class="nav-item mb-3">
+          <a class="nav-link d-flex align-items-center"
+             href="1historia.php">
+            <i class="bi bi-stars me-2"></i>Our Story
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="mt-5">
+  <?php include_once("1fooder.php") ?>
+</footer>
+
+<!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-<div class="container text-center mt-5">
-  <button class="btn rounded-pill px-4 py-2"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-          style="background-color: #f5f5dc; color: #000;">
-    ☰ Menu
-  </button>
-</div>
+<script>
+function actualizarContador() {
 
-<!-- Side menu (offcanvas) -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header border-bottom" style="border-color: #d8b37c;">
-    <h5 class="offcanvas-title fw-bold text-uppercase" id="offcanvasRightLabel">
-      <i class="bi bi-info-circle-fill me-2" style="color: #0f0d0bff;"></i>More Information
-    </h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
+  const fechaBoda = new Date('2026-06-28T11:00:00');
+  const ahora = new Date();
 
-  <div class="offcanvas-body px-4">
-    <ul class="navbar-nav">
-      <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center" href="1principal.php">
-          <i class="bi bi-house-door-fill me-2"></i>Home
-        </a>
-       <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center fs-5" href="1confirmacion.php">
-          <i class="bi bi-clipboard-check-fill me-2"></i> RSVP Confirmation
-        </a>
-      </li>
-      </li>
-      <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center" href="1ubicacion.php">
-          <i class="bi bi-geo-alt-fill me-2"></i>Location
-        </a>
-      </li>
-      <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center" href="1itinerario.php">
-          <i class="bi bi-calendar-heart-fill me-2"></i>Schedule
-        </a>
-      </li>
-      <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center" href="1galeria.php">
-          <i class="bi bi-images me-2"></i>Gallery
-        </a>
-      </li>
-      <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center" href="1indicaciones.php">
-          <i class="bi bi-map-fill me-2"></i>Guidelines
-        </a>
-      </li>
-      <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center" href="1nuestra_información.php">
-          <i class="bi bi-people-fill me-2"></i>Our Information
-        </a>
-      </li>
-      <li class="nav-item mb-3">
-        <a class="nav-link d-flex align-items-center" href="1historia.php">
-          <i class="bi bi-stars me-2"></i>Our Story
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
+  const diferencia = fechaBoda - ahora;
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  if (diferencia > 0) {
 
-  </main>
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
 
-  <footer><?php include_once("1fooder.php") ?></footer>
+    const horas = Math.floor(
+      (diferencia % (1000 * 60 * 60 * 24))
+      / (1000 * 60 * 60)
+    );
+
+    const minutos = Math.floor(
+      (diferencia % (1000 * 60 * 60))
+      / (1000 * 60)
+    );
+
+    const segundos = Math.floor(
+      (diferencia % (1000 * 60))
+      / 1000
+    );
+
+    document.getElementById('dias').innerText = dias;
+    document.getElementById('horas').innerText = horas;
+    document.getElementById('minutos').innerText = minutos;
+    document.getElementById('segundos').innerText = segundos;
+
+  } else {
+
+    document.getElementById('contador').innerHTML =
+      "<p>The big day has arrived! 💍✨</p>";
+
+  }
+}
+
+actualizarContador();
+
+setInterval(actualizarContador, 1000);
+</script>
+
 </body>
 </html>
-
 
 
 
